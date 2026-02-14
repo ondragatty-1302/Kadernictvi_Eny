@@ -60,4 +60,80 @@ main h1 {
     --light-bg: #f9f9f9;
     --border-color: #e0e0e0;
 }
+/* ===== MOBILE FIX PACK ===== */
+
+@media (max-width: 768px) {
+
+  /* Global spacing */
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+
+  /* Hero */
+  .hero h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  /* Buttons */
+  .btn,
+  .btn-nav-reserve {
+    width: 100%;
+    text-align: center;
+    padding: 14px;
+  }
+
+  /* Navigation */
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Gallery */
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Cards (team / services) */
+  .card,
+  .team-card {
+    width: 100%;
+  }
+
+  /* Modal */
+  .modal {
+    width: 95%;
+    max-width: 400px;
+    padding: 20px;
+  }
+
+  .modal input,
+  .modal select,
+  .modal textarea {
+    width: 100%;
+  }
+
+}
+html, body {
+  overflow-x: hidden;
+}
+
+
 
