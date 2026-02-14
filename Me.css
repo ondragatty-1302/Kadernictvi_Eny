@@ -134,6 +134,38 @@ main h1 {
 html, body {
   overflow-x: hidden;
 }
+/* Pravidla pro mobily */
+@media (max-width: 768px) {
+    .photo-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px;
+    }
+
+    .grid-item {
+        width: 90% !important; /* Fotka zabere skoro celou šířku mobilu */
+        max-width: 400px;
+    }
+
+    .grid-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .tym-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 30px;
+    }
+
+    .kaderik-karta {
+        width: 100% !important;
+    }
+}
+
 
 
 
