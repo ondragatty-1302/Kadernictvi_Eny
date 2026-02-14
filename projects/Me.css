@@ -1,0 +1,63 @@
+body {
+  background-color: rgb(242,242,242);
+  font-family: Montsserat, Arial;
+  padding-top: 60px;
+}
+main h1 {
+  display: flex;
+  justify-content: center;
+}
+.borderline {
+  border: 10px solid rgb(255, 140, 0);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.cta-container {
+    text-align: center;
+    margin: 40px 0; /* Mezera nad a pod tlačítkem */
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #FF9500; /* Oranžová barva z vašeho loga */
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 18px 40px;
+    border-radius: 50px; /* Zaoblené moderní rohy */
+    box-shadow: 0 4px 15px rgba(255, 149, 0, 0.3);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    margin-top: -50px;
+}
+.cta-button-text {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 15px;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #e68600; /* Trochu tmavší při najetí */
+    transform: translateY(-3px); /* Jemné nadskočení */
+    box-shadow: 0 6px 20px rgba(255, 149, 0, 0.5);
+}
+
+.cta-subtext {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: normal;
+    margin-top: 5px;
+    opacity: 0.9;
+}
+:root {
+    --primary-orange: #FF7F00;
+    --dark-grey: #333333;
+    --light-bg: #f9f9f9;
+    --border-color: #e0e0e0;
+}
+

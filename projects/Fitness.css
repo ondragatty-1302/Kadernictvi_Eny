@@ -1,0 +1,423 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(238, 238, 238);
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 50px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.headline-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.static-title {
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.text-anim {
+    color: #ff4500;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    opacity: 0; 
+    animation: showMe 0.8s forwards;
+    animation-delay: 3s;
+}
+
+
+.hero-sekce {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../photos/Posilovna_Pisek_Harmony-4.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+@keyframes showMe {
+    to { opacity: 1; }
+}
+
+@keyframes hideMe {
+    to { opacity: 0; visibility: hidden; }
+}
+
+@keyframes showMe {
+    to { opacity: 1; }
+}
+
+.hero-sekce {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../photos/Posilovna_Pisek_Harmony-4.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.flex-sekce {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: -50px; 
+}
+
+.karta {
+    background-color: lightgrey;
+    color: white;
+    width: 320px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+.foto-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.ikona {
+    height: 80px;
+    mix-blend-mode: multiply;
+}
+
+.karta h2 {
+    text-align: center;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.radek {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed white;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+.cas {
+    font-weight: 700;
+}
+
+.cas-red {
+    font-weight: 700;
+    color: rgb(172, 65, 65);
+    text-decoration: underline;
+}
+
+.o-nas {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.text-blok {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.borderline {
+    border-bottom: 2px solid black;
+    margin-bottom: 50px;
+    margin-top: 50px
+}
+
+.embed-mapa {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    margin-bottom: 50px;
+}
+.Obrázky-sekce h2 {
+  display: flex;
+  justify-content: center;
+  
+}
+.obrázky-grid {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  justify-content: center;
+  align-items: center;
+  column-gap: 100px;
+  row-gap: 100px;
+}
+.nas-gym {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+}
+
+.nas-gym h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+.gym-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 220px;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gym-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #eee;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.gym-item.velka {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.gym-item.vysoka {
+    grid-row: span 2;
+}
+
+.gym-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+
+.gym-item:hover img {
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 992px) {
+    .gym-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 480px) {
+    .gym-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .gym-item {
+        height: 250px;
+    }
+}
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ff4500; 
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px
+}
+
+.cta-button:hover {
+  background-color: #e63e00; 
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.cta-button:active {
+  transform: translateY(0);
+}
+.reviews-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* Světlé pozadí pro oddělení sekce */
+    text-align: center;
+}
+
+.reviews-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #222;
+    text-transform: uppercase;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap; /* Aby se na mobilu naskládaly pod sebe */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.review-card {
+    background: rgb(238,238,238);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 4px solid #ff4500; /* Ladí k tomu CTA tlačítku */
+}
+
+.stars {
+    color: #f9d423;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.review-card p {
+    font-style: italic;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.author {
+    font-weight: bold;
+    color: #222;
+    display: block;
+}
+.final-contact {
+    padding: 50px 20px;
+    background-color: #222; /* Tmavé pozadí pro kontrast k recenzím */
+    color: #fff;
+}
+
+.contact-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-info, .payments-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info h3, .payments-info h3 {
+    border-bottom: 2px solid #ff4500;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.contact-info a {
+    color: #ff4500;
+    text-decoration: none;
+}
+
+.payment-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.payment-item img {
+    height: 30px; /* Sjednocení výšky ikon */
+    filter: grayscale(1) invert(1); /* Udělá loga bílá, aby ladila k tmavému webu */
+    opacity: 0.8;
+}
+
+.payment-item.multisport {
+    font-weight: bold;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.small-text {
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        text-align: center;
+        flex-direction: column;
+    }
+    .payment-icons {
+        justify-content: center;
+    }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: fixed;   /* Tohle zafixuje menu na místě */
+  top: 0;            /* Přilepí ho nahoru */
+  left: 0;
+  width: 100%;       /* Roztáhne ho na celou šířku */
+  height: 50px;      /* Tvá požadovaná výška */
+  background-color: #1a1a1a; /* Barva pozadí (ideálně tmavá podle tvého webu) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;     /* Zajistí, že menu bude nad všemi ostatními prvky */
+  border-bottom: 2px solid #ff4500; /* Volitelný oranžový proužek ladící k webu */
+}
+
+.nav-container a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;    
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.nav-container a:hover {
+  color: #ff4500;    
+}
