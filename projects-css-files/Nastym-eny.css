@@ -1,0 +1,77 @@
+.tym-sekce {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.sekce-nadpis {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.tym-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; /* Pro mobily, aby byly pod sebou */
+}
+
+.kaderik-karta {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.kaderik-karta:hover {
+    transform: translateY(-10px);
+}
+
+.fotka-obal {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    border-radius: 50%; /* Kulatá fotka */
+    overflow: hidden;
+    border: 4px solid #FF9500; /* Oranžový kroužek kolem fotky */
+}
+
+.fotka-tymu {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kaderik-karta h3 {
+    margin: 10px 0 5px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.specializace {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.btn-rezervace-tym {
+    display: inline-block;
+    background-color: #FF9500;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.btn-rezervace-tym:hover {
+    background-color: #e68600;
+}
+
