@@ -112,36 +112,55 @@ html, body {
     padding: 20px;
 }
 
-/* --- MAGICKÉ MEDIA QUERY PRO MOBILY (do 768px) --- */
 @media (max-width: 768px) {
-    /* Nadpisy, aby nebyly obří */
-    h1, .gallery-heading, .sekce-nadpis {
+    .main-nav {
+      opacity: 0;
+    }
+    .portfolio-banner {
+      opacity: 0;
+    }
+    body {
+      margin-top: -100px;
+    }
+    .text-hero {
+      margin-bottom: 1000px;
+    }
+    .cta-container {
+      margin-top: -40px;
+    }
+    .section-container {
+    display: grid !important;          /* Přepneme z gridu na flex */
+    grid-template-columns: 1fr !important; /* Položky půjdou pod sebe */
+    gap: 30px;              /* Mezera mezi ceníkem a otevíračkou */
+    padding: 15px;          /* Trochu menší padding, ať máš víc místa pro text */
+    width: 100%;            /* Aby to využilo celou šířku mobilu */
+    }
+    .section-container div {
+      width: 100%;
+    }
+     h1, .gallery-heading, .sekce-nadpis {
         font-size: 1.8rem !important;
         text-align: center;
-    }
-
-    /* Červené tlačítko a texty v Hero sekci */
-    .hero-content {
-        padding-top: 30px;
-        text-align: center;
-    }
-
-    /* Posunutí tlačítka, aby nebylo moc dole */
-    .btn-rezervace, .cta-button { 
-        margin-top: 20px !important;
-        width: 90%; /* Tlačítko skoro přes celý mobil se lépe mačká */
+     }
+     .btn-rezervace, .cta-button { 
+        width: 85%; /* Tlačítko skoro přes celý mobil se lépe mačká */
         font-size: 1.1rem;
     }
-
-    /* Tabulky nebo seznamy v ceníku */
-    .cenik-list, .opening-hours {
-        width: 100% !important;
-        margin: 0 auto;
-        font-size: 0.9rem;
+    .svg {
+      text-align: center !important;
     }
-
-    /* Skrytí vizuálních sloupců, které na mobilu jen zavazejí */
-    .vizualni-sloupec {
-        display: none;
+    .kontaktni-panel {
+      display: flex !important;
+      flex-direction: column;
+      padding: 20px;
+      gap: 20px;
+    }
+    .o-nas-text {
+      width: 100%;
+      text-align: center;
+    }
+    .embed-mapa {
+      width: 100%;
+      height: auto;
     }
 }
