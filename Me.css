@@ -165,24 +165,13 @@ html, body {
     }
 }
 @media (max-width: 768px) {
-    .photo-grid {
-        display: flex !important; /* Přepne mřížku na řadu */
-        overflow-x: auto;         /* Povolí posun do stran */
-        scroll-snap-type: x mandatory; /* "Přicvakne" fotku na střed */
-        gap: 15px;
+    .photo-grid { /* tvůj název třídy pro galerii */
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important; /* Dva vedle sebe */
+        gap: 10px; /* Menší mezera na mobilu */
         padding: 10px;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    .photo-grid .grid-item {
-        flex: 0 0 85%;            /* Každá fotka zabere 85% šířky displeje */
-        scroll-snap-align: center;
-        width: 100%;              /* Aby fotka vyplnila svůj vymezený prostor */
-    }
-
-    /* Skryje scrollbar, aby to vypadalo čistě jako aplikace */
-    .photo-grid::-webkit-scrollbar {
-        display: none;
     }
 }
+
+
 
