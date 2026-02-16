@@ -1,11 +1,12 @@
 body {
   background-color: rgb(242,242,242);
   font-family: Montsserat, Arial;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 main h1 {
   display: flex;
   justify-content: center;
+  margin-top: 100px;
 }
 .borderline {
   border: 10px solid rgb(255, 140, 0);
@@ -172,6 +173,7 @@ html, body {
         padding: 10px;
     }
 }
+
 
 
 
