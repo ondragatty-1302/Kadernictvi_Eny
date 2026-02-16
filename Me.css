@@ -1,7 +1,7 @@
 body {
   background-color: rgb(242,242,242);
   font-family: Montsserat, Arial;
-  padding-top: 60px;
+  padding-top: 80px;
 }
 main h1 {
   display: flex;
@@ -172,6 +172,7 @@ html, body {
         padding: 10px;
     }
 }
+
 
 
 
